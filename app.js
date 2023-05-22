@@ -15,4 +15,10 @@ app.get("/", (req, res) => {
     res.render("ToDoList", {List_Tittle: day, newItems: items});
 });
 
+app.post("/", (req, res)=>{
+    let item = req.body.newItem;
+    items.push(item);
+    res.redirect("/");
+});
+
 app.listen(port, () => console.log(`ToDo app listening on port ${port}!`));
