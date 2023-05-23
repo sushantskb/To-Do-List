@@ -13,7 +13,8 @@ Merits are:
     Set deadlines for each goal.
 
 
-## Deployment
+## home rout
+
 
 
 
