@@ -12,7 +12,7 @@ app.use(express.static("public"));
 
 app.get("/", (req, res) => {
     let day = date.getdate();
-    res.render("ToDoList", {List_Tittle: day, newItems: items});
+    res.render("ToDolist", {List_Tittle: day, newItems: items});
 });
 
 app.post("/", (req, res)=>{
@@ -28,7 +28,7 @@ app.post("/", (req, res)=>{
 });
 
 app.get("/work", (req, res)=>{
-    res.render("ToDoList", {List_Tittle : "Work", newItems: workItems});
+    res.render("ToDolist", {List_Tittle : "Work", newItems: workItems});
 })
 
 app.listen(port, () => console.log(`ToDo app listening on port ${port}!`));
